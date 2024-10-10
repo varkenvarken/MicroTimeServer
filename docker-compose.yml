@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  microtimeserver:
+    image: microtimeserver
+    ports:
+      - "54321:54321"
+    build:
+      context: .
+      dockerfile: ./Dockerfile
